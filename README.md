@@ -51,7 +51,6 @@
 字符串在进行大小比较时，会根据第一个不同的字符的 ASCII 码值进行比较，当数字与字符串比较大小时，会强制的将字符串转换成数字然后再进行比较
 
 </details>
-<br />
 
 10.21 [CSS 中重要的 BFC](https://segmentfault.com/a/1190000013023485)
 
@@ -89,7 +88,6 @@ CSS 基础有点薄弱，理解得不多……
 > 最后，思考一个问题：因为你，什么会变得不一样？
 
 </details>
-<br />
 
 10.19 [Dan Abramov 访谈实录](https://mp.weixin.qq.com/s/SBVE34dW9g4BsabmLJV9wg)
 
