@@ -4,6 +4,55 @@
 
 <hr />
 
+10.22 [关于 JS 隐式类型转换的完整总结](https://segmentfault.com/a/1190000040048164)
+
+<details>
+<summary>阅读笔记</summary><br />
+
+- ToPrimitive - 内部方法
+  - toPrimitive(input: any, preferedType?: 'string' |'number')
+- ToNumber
+- 加减法中隐式转换规则
+  - 遇到对象先执行 ToPrimitive 转换为基本类型
+    - 加法（+）运算，preferedType 是默认值
+    - 减法（-）运算，preferedType 是 Number
+  - 字符串 + 任意值，会被处理为字符串的拼接
+  - 非字符串 + 非字符串，两边都会先 ToNumber
+  - 任意值 - 任意值，一律执行 ToNumber，进行数字运算
+  - - x 和 一元运算 +x 是等效的（以及- x)，都会强制 ToNumber
+  - {} 在最前面时可能不再是对象
+    - 代码块
+    - 标签
+  - Symbol 不能加减
+- 宽松相等（==），相等于全等都需要对类型进行判断，当类型不一致时，宽松相等会触发隐式转换。
+  - 对象 == 对象，类型一致则不做转换
+  - 对象 == 基本值，对象先执行 ToPrimitive 转换为基本类型
+  - 布尔值 == 非布尔值，布尔值先转换成数字，再按数字规则操作
+  - 数字 == 字符串，字符串 ToNumber 转换成数字
+  - null、undefined、symbol
+    - null、undefined 与任何非自身的值对比结果都是 false，但是 null == undefined 是一个特例
+- 对比（<>），对比不像相等，可以严格相等（===）防止类型转换，对比一定会存在隐式类型转换。
+  - 对象总是先执行 ToPrimitive 为基本类型
+  - 任何一边出现非字符串的值，则一律转换成数字做对比
+- ToBoolean
+  - if(...)
+  - for(;...;)
+  - while(...)
+  - do while(...)
+  - ... ? :
+  - ||
+  - &&
+- 总结，对象都需要先 ToPrimitive 转成基本类型，除非是宽松相等（==）时两个对象做对比。
+  - \+ 没有字符串就全转数字
+  - \- 全转数字，preferedType = Number
+  - == 同类型不转，数字优先，布尔全转数字，null、undefined、symbol 不转
+  - <> 数字优先，除非两边都是字符串
+
+字符串在进行大小比较时，会根据第一个不同的字符的 ASCII 码值进行比较，当数字与字符串比较大小时，会强制的将字符串转换成数字然后再进行比较
+
+</details>
+<br />
+
 10.21 [CSS 中重要的 BFC](https://segmentfault.com/a/1190000013023485)
 
 CSS 基础有点薄弱，理解得不多……
