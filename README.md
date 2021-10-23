@@ -4,7 +4,18 @@
 
 <hr />
 
+10.23 [浏览器的重排和重绘](https://juejin.cn/post/6932734614440001549)
+
+<p align="center">
+  <img src="./assets/images/browser-components.png">
+</p>
+<p align="center">浏览器核心组件</p>
+
+躺在收藏夹很久了，读了才发现概念混乱，还有错别字，不过[原文](https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/)看起来很专业。
+
 10.22 [关于 JS 隐式类型转换的完整总结](https://segmentfault.com/a/1190000040048164)
+
+较为全面的总结了 JS 隐式类型转换的各种情况。
 
 <details>
 <summary>阅读笔记</summary><br />
@@ -58,6 +69,8 @@ CSS 基础有点薄弱，理解得不多……
 
 10.20 [如何推动前端团队的基础设施建设](https://juejin.cn/post/6844904093434019853)
 
+全面的探讨了前端团队的基础设施建设的目的和方法。
+
 <details>
 <summary>阅读笔记</summary><br />
 
@@ -90,6 +103,8 @@ CSS 基础有点薄弱，理解得不多……
 </details>
 
 10.19 [Dan Abramov 访谈实录](https://mp.weixin.qq.com/s/SBVE34dW9g4BsabmLJV9wg)
+
+重点介绍了 React 的设计思想和未来的发展方向。
 
 <details>
 <summary>阅读笔记</summary><br />
