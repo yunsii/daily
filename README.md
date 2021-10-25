@@ -4,7 +4,24 @@
 
 <hr />
 
-10.23 [浏览器的重排和重绘](https://juejin.cn/post/6932734614440001549)
+**10.25** [解读新一代 Web 性能体验和质量指标](https://juejin.cn/post/6844904168591736846)
+
+<details>
+<summary>阅读笔记</summary><br />
+
+> 网站开发者不应该为了理解他们交付给用户的体验的质量指标而成为性能专家。`Web Vitals` 计划的目的就是简化场景，降低学习成本，并帮助站点关注最重要的指标，即 `Core Web Vitals`。
+
+> `Core Web Vitals` 是应用于所有 Web 页面的 `Web Vitals` 的子集，所有的站点开发者都应该关注一下，他们将在所有谷歌提供的性能测试工具中进行显示。每个 `Core Web Vitals` 代表用户体验的一个不同方面，在该领域是可衡量的，并反映了以用户为中心的关键结果的真实体验。
+
+> 网页核心的性能指标应该是随着时间的推移而不断演变的。当前 2020 年主要关注用户体验的三个方面——加载、交互性和视觉稳定性：
+>
+> - `Largest Contentful Paint (LCP)`: 衡量加载体验：为了提供良好的用户体验， LCP 应该在页面首次开始加载后的 2.5 秒内发生。
+> - `First Input Delay (FID)`: 衡量可交互性，为了提供良好的用户体验，页面的 FID 应当小于 100 毫秒。
+> - `Cumulative Layout Shift (CLS)`:衡量视觉稳定性，为了提供良好的用户体验，页面的 CLS 应保持小于 0.1。
+
+</details>
+
+**10.23** [浏览器的重排和重绘](https://juejin.cn/post/6932734614440001549)
 
 <p align="center">
   <img src="./assets/images/browser-components.png">
@@ -13,7 +30,7 @@
 
 躺在收藏夹很久了，读了才发现概念混乱，还有错别字，不过[原文](https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/)看起来很专业。
 
-10.22 [关于 JS 隐式类型转换的完整总结](https://segmentfault.com/a/1190000040048164)
+**10.22** [关于 JS 隐式类型转换的完整总结](https://segmentfault.com/a/1190000040048164)
 
 较为全面的总结了 JS 隐式类型转换的各种情况。
 
@@ -63,11 +80,11 @@
 
 </details>
 
-10.21 [CSS 中重要的 BFC](https://segmentfault.com/a/1190000013023485)
+**10.21** [CSS 中重要的 BFC](https://segmentfault.com/a/1190000013023485)
 
 CSS 基础有点薄弱，理解得不多……
 
-10.20 [如何推动前端团队的基础设施建设](https://juejin.cn/post/6844904093434019853)
+**10.20** [如何推动前端团队的基础设施建设](https://juejin.cn/post/6844904093434019853)
 
 全面的探讨了前端团队的基础设施建设的目的和方法。
 
@@ -102,7 +119,7 @@ CSS 基础有点薄弱，理解得不多……
 
 </details>
 
-10.19 [Dan Abramov 访谈实录](https://mp.weixin.qq.com/s/SBVE34dW9g4BsabmLJV9wg)
+**10.19** [Dan Abramov 访谈实录](https://mp.weixin.qq.com/s/SBVE34dW9g4BsabmLJV9wg)
 
 重点介绍了 React 的设计思想和未来的发展方向。
 
