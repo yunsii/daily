@@ -4,6 +4,29 @@
 
 <hr />
 
+**10.26** [你需要了解的六种渲染模式](https://segmentfault.com/a/1190000023469150)
+
+<p align="center">
+  <img src="./assets/images/渲染模式对比.png">
+</p>
+<p align="center">渲染模式对比</p>
+
+<details>
+<summary>阅读笔记</summary><br />
+
+> - SSR (Server Side Rendering)，关联阅读 [彻底理解服务端渲染 - SSR 原理](https://github.com/yacan8/blog/issues/30)
+> - SSG (Static Site Generation)
+>   - 静态网站生成类似于服务器端渲染，不同之处在于您在构建时而不是在请求时渲染页面。
+> - SSR With hydration -对曾经渲染过的 HTML 进行重新渲染的过程称为水合。
+> - CSR with Pre-rendering
+> - CSR (Client Side Rendering)
+> - 三态渲染 (Trisomorphic Rendering)
+>   - 如果你可以结合 Service-Worker, 则三态渲染模式也可能派上用场。
+
+另外加一个 Modern.js 提到到 **SPR**，无服务预渲染（Serverless Pre-rendering）是一种通过预渲染与缓存的方式，为 SSR 页面提供静态 Web 响应性能的技术方案。理解下来好像跟三态渲染思路类似？页面直接可视范围内可以做到无感刷新。
+
+</details>
+
 **10.25** [解读新一代 Web 性能体验和质量指标](https://juejin.cn/post/6844904168591736846)
 
 <details>
