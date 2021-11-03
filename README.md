@@ -4,6 +4,47 @@
 
 <hr />
 
+**11.03** 关于设计模式
+
+- [前端必备 10 种设计模式](https://segmentfault.com/a/1190000020179009)
+- [前端需要了解的 9 种设计模式](https://zhuanlan.zhihu.com/p/133263261)
+
+<details>
+<summary>阅读笔记</summary><br />
+
+设计原则
+
+- 单一职责原则(SRP)：一个对象（只做一件事）。
+  - 代理模式
+  - 迭代器模式
+  - 单例模式
+  - 装饰者模式
+- 最少知识原则(LKP)：一个软件实体应当尽可能少地与其他实体发生相互作用。
+  - 中介者模式
+- 开放封闭原则(OCP)：软件实体（类，模块，函数）应该都是可以扩展，但是不可修改
+  - 发布订阅模式
+  - 模板方法模式
+  - 策略模式
+  - 代理模式
+  - 职责链模式
+
+设计模式的类型
+
+- 结构型模式（Structural Patterns）：通过识别系统中组件间的简单关系来简化系统的设计。
+  - 外观模式（Facade Pattern）
+  - 代理模式（Proxy Pattern）
+- 创建型模式（Creational Patterns）：处理对象的创建，根据实际情况使用合适的方式创建对象。常规的对象创建方式可能会导致设计上的问题，或增加设计的复杂度。创建型模式通过以某种方式控制对象的创建来解决问题。
+  - 工厂模式（Factory Pattern）
+  - 单例模式（Singleton Pattern）
+- 行为型模式（Behavioral Patterns）：用于识别对象之间常见的交互模式并加以实现，如此，增加了这些交互的灵活性。
+  - 策略模式（Strategy Pattern）
+  - 迭代器模式（Iterator Pattern）
+  - 观察者模式（Observer Pattern）
+  - 中介者模式（Mediator Pattern）
+  - 访问者模式（Visitor Pattern）
+
+</details>
+
 **10.26** [你需要了解的六种渲染模式](https://segmentfault.com/a/1190000023469150)
 
 <p align="center">
