@@ -4,6 +4,15 @@
 
 <hr />
 
+**11.03** [字节跳动是如何落地微前端的](https://mp.weixin.qq.com/s/L9wbfNG5fTXF5bx7dcgj4Q)
+
+<details>
+<summary>阅读笔记</summary><br />
+
+通过对比与实践介绍了微前端的优缺点及其整体架构。
+
+</details>
+
 **11.03** 关于设计模式
 
 - [前端必备 10 种设计模式](https://segmentfault.com/a/1190000020179009)
