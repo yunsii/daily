@@ -4,6 +4,22 @@
 
 <hr />
 
+**11.16** 关于 JS 原型链
+
+<p align="center">
+  <img width="480" src="./assets/images/JavaScript-Object-Layout.jpg">
+</p>
+<p align="center"><a href="http://www.mollypages.org/tutorials/js.mp">JavaScript 对象模型</a></p>
+
+- [原型链、继承和 instanceof](https://segmentfault.com/a/1190000008464190)
+- [理解 JavaScript 的原型链和继承](https://blog.oyanglul.us/javascript/understand-prototype)
+
+衍生问题 => `'abc' instanceof String; // false`
+
+- [Why does instanceof return false for some literals?](https://stackoverflow.com/a/18057157/8335317)
+- [Primitive](https://developer.mozilla.org/en-US/docs/Glossary/Primitive)
+- [Object](https://developer.mozilla.org/en-US/docs/Glossary/Object)
+
 **11.03** [字节跳动是如何落地微前端的](https://mp.weixin.qq.com/s/L9wbfNG5fTXF5bx7dcgj4Q)
 
 <details>
