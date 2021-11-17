@@ -13,6 +13,7 @@
 
 - [原型链、继承和 instanceof](https://segmentfault.com/a/1190000008464190)
 - [理解 JavaScript 的原型链和继承](https://blog.oyanglul.us/javascript/understand-prototype)
+- [继承与原型链](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Inheritance_and_the_prototype_chain) 阅读前两遍文章后，阅读该文档更容易理解。
 
 衍生问题 => `'abc' instanceof String; // false`
 
