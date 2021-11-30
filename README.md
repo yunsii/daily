@@ -4,6 +4,30 @@
 
 <hr />
 
+**11.30** [React 运行时优化方案的演进](https://juejin.cn/post/7010539227284766751)
+
+<details>
+<summary>阅读笔记</summary><br />
+
+开篇还推荐了几篇文章：
+
+- [【React 深入】setState 的执行机制](https://mp.weixin.qq.com/s?__biz=Mzk0MDMwMzQyOA==&mid=2247490023&idx=1&sn=0ca662132f4f44ef61f608dcb095f1fa)
+- [【React 深入】React 事件机制](https://mp.weixin.qq.com/s?__biz=Mzk0MDMwMzQyOA==&mid=2247490031&idx=1&sn=d2f80c18aef6ab40a0fdc2989cfb9906)
+- [【React 深入】深入分析虚拟 DOM 的渲染过程和特性](https://mp.weixin.qq.com/s?__biz=Mzk0MDMwMzQyOA==&mid=2247490064&idx=1&sn=0f5047c2be91db25203c42b0ece074e9)
+- [【React 深入】从 Mixin 到 HOC 再到 Hook](https://mp.weixin.qq.com/s?__biz=Mzk0MDMwMzQyOA==&mid=2247490057&idx=1&sn=e7a9abb4df2fb7f7baf406dbb20d8313)
+
+看标题还挺有意思的。
+
+> 编译时优化
+
+> 运行时优化
+
+说明了 Vue 在运行时和预编译取了一个很好地权衡，它保留了虚拟 dom，但是会通过响应式去控制虚拟 dom 的颗粒度，在预编译里面，又做了足够多的性能优化，做到了按需更新。而 React 在编译时很难做太多的事情，像 Vue 这样的编译时优化是很难实现的。所以，我们可以看到 React 几个大版本的的优化主要都在运行时。
+
+另外还分析了 `getDerivedStateFromProps` API 和事件委托节点变更的历史原因以及 React 所做的各种运行时优化的工作，着实开了眼界，值得反复阅读，彻底弄懂文章提到的各种问题。
+
+</details>
+
 **11.16** 关于 JS 原型链
 
 <p align="center">
