@@ -4,6 +4,138 @@
 
 <hr />
 
+**12.12** [What the heck are CJS, AMD, UMD, and ESM in Javascript?](https://dev.to/iggredible/what-the-heck-are-cjs-amd-umd-and-esm-ikm)
+
+<details>
+<summary>阅读笔记</summary><br />
+
+**CJS**
+
+CJS is short for CommonJS.
+
+```js
+//importing
+const doSomething = require('./doSomething.js');
+
+//exporting
+module.exports = function doSomething(n) {
+  // do something
+};
+```
+
+- node 使用 CJS 模块格式
+- 同步导入模块
+- 导入的是对象的副本
+- 不能在浏览器中直接使用
+
+**AMD**
+
+AMD stands for Asynchronous Module Definition.
+
+```js
+define(['dep1', 'dep2'], function (dep1, dep2) {
+  //Define the module value by returning a value.
+  return function () {};
+});
+```
+
+or
+
+```js
+// "simplified CommonJS wrapping" https://requirejs.org/docs/whyamd.html
+define(function (require) {
+  var dep1 = require('dep1'),
+    dep2 = require('dep2');
+  return function () {};
+});
+```
+
+- 异步导入模块
+- 为前端而生
+- 语法不如 CJS 直观
+
+**UMD**
+
+UMD stands for Universal Module Definition.
+
+```js
+(function (root, factory) {
+    if (typeof define === "function" && define.amd) {
+        define(["jquery", "underscore"], factory);
+    } else if (typeof exports === "object") {
+        module.exports = factory(require("jquery"), require("underscore"));
+    } else {
+        root.Requester = factory(root.$, root._);
+    }
+}(this, function ($, _) {
+    // this is where I defined my module implementation
+
+    var Requester = { // ... };
+
+    return Requester;
+}));
+```
+
+- 前后端适用
+- 更像一个配置多个模块系统的模式
+- 通常作为一个支持回退的模块系统
+
+**ESM**
+
+ESM stands for ES Modules. It is Javascript's proposal to implement a standard module system.
+
+```js
+import {foo, bar} from './myLib';
+
+// ...
+
+export default function() {
+  // your Function
+};
+export const function1() {...};
+export const function2() {...};
+```
+
+- 可直接在现代浏览器中使用
+
+```html
+<script type="module">
+  import { func1 } from 'my-lib';
+
+  func1();
+</script>
+```
+
+- 支持类 CJS 的简单语法，以及 AMD 的异步加载 `import()`
+- Tree Shaking，基于[静态模块结构](https://exploringjs.com/es6/ch_modules.html#static-module-structure)
+
+此外，原文中包含各种规范的原文，有机会可以好生研究一下。
+
+</details>
+
+**12.12** [Web workers vs Service workers vs Worklets](https://bitsofco.de/web-workers-vs-service-workers-vs-worklets/)
+
+<details>
+<summary>阅读笔记</summary><br />
+
+**Web workers**
+
+通过类似 `const myWorker = new Worker('worker.js')` 的命令创建，通过 `postMessage` 通信。
+
+**Service workers**
+
+Service workers are a type of worker that serve the explicit purpose of being a **proxy between the browser and the network and/or cache**.
+
+通过类似 `navigator.serviceWorker.register('/service-worker.js')` 的命令创建.
+
+**Worklets**
+
+Worklets are a very lightweight, highly specific, worker. They enable us as developers to hook into various parts of the browser’s rendering process.
+
+通过类似 `CSS.paintWorklet.addModule('myWorklet.js')` 的命令创建。
+
+</details>
+
 **11.30** [React 运行时优化方案的演进](https://juejin.cn/post/7010539227284766751)
 
 <details>
