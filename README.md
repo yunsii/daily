@@ -4,6 +4,46 @@
 
 <hr />
 
+**12.12** [Developing in WSL](https://code.visualstudio.com/docs/remote/wsl)
+
+<p align="center">
+  <img src="./assets/images/architecture-wsl.png">
+</p>
+<p align="center">WSL 架构</p>
+
+<details>
+<summary>阅读笔记</summary><br />
+
+> The Visual Studio Code Remote - WSL extension lets you use the Windows Subsystem for Linux (WSL) as your full-time development environment right from VS Code. You can develop in a Linux-based environment, use Linux-specific toolchains and utilities, and run and debug your Linux-based applications all from the comfort of Windows.
+
+虽然用了 WSL + VS Code 很久了，这次来看看官方的操作手册。
+
+> If you already have a folder open, you can also use the Remote-WSL: Reopen in WSL command. You will be prompted which distro to use.
+>
+> If you are in a WSL window and want to open the current input in a local window, use Remote-WSL: Reopen in Windows.
+
+原来可以互操作，有点秀。此外还可以通过 Windows 的终端直接打开指定文件或目录，才想起来之前都是手动进入到 WSL 的终端打开的。
+
+> If you install an extension from the Extensions view, it will automatically be installed in the correct location. Once installed, you can tell where an extension is installed based on the category grouping. There will be Local - Installed category and one for WSL.
+
+> Local extensions that actually need to run remotely will appear dimmed and disabled in the Local - Installed category. Select Install to install an extension on your remote host.
+
+扩展会自动安装到合适位置。
+
+可通过 Remote-WSL: Show Log 查看 WSL 日志。
+
+> If you are using WSL 2 and [Docker Desktop's WSL 2 back-end](https://docs.docker.com/docker-for-windows/wsl-tech-preview/), you can use the [Remote - Containers](https://code.visualstudio.com/docs/remote/containers) extension to work with source code stored inside WSL!
+
+居然可以还可以在使用安装在 WSL 中的 Docker 容器 \_(:з」∠)\_
+
+**我所关注的已知影响较大的限制：**
+
+- [permission denied error trying to rename a folder in the open workspace in WSL 1](https://code.visualstudio.com/docs/remote/wsl#_i-see-eaccess-permission-denied-error-trying-to-rename-a-folder-in-the-open-workspace-in-wsl-1)
+- [Webpack HMR not working](https://code.visualstudio.com/docs/remote/wsl#_nodejs-in-wsl-1)
+- [Git limitations](https://code.visualstudio.com/docs/remote/wsl#_git-limitations)
+
+</details>
+
 **12.12** [What the heck are CJS, AMD, UMD, and ESM in Javascript?](https://dev.to/iggredible/what-the-heck-are-cjs-amd-umd-and-esm-ikm)
 
 <details>
