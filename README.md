@@ -6,6 +6,10 @@
 
 归档：[[2021](./2021.md)]
 
+**02.07** [CSS Grid 网格布局教程](https://www.ruanyifeng.com/blog/2019/03/grid-layout-tutorial.html)
+
+很久之前就听说 Grid 布局了，今天简单了解了一下，发现确实挺好的，如果不管 IE 兼容的话。
+
 **01.17** [重新构想原子化 CSS](https://antfu.me/posts/reimagine-atomic-css-zh)
 
 <details>
