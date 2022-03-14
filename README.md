@@ -6,9 +6,13 @@
 
 归档：[[2021](./2021.md)]
 
+**03.14** [新一代Web建站技术栈的演进：SSR、SSG、ISR、DPR都在做什么？](https://zhuanlan.zhihu.com/p/365113639)
+
 **02.07** [CSS Grid 网格布局教程](https://www.ruanyifeng.com/blog/2019/03/grid-layout-tutorial.html)
 
 很久之前就听说 Grid 布局了，今天简单了解了一下，发现确实挺好的，如果不管 IE 兼容的话。
+
+> 通过最近的实践，Grid 布局的适用场景还是完全网格化的布局（可存在网格合并），如果可能存在长度不成比例的情况下，还是 Flex 布局更佳。 —— 2022.03.14
 
 **01.17** [重新构想原子化 CSS](https://antfu.me/posts/reimagine-atomic-css-zh)
 
