@@ -6,6 +6,16 @@
 
 归档：[[2021](./2021.md)]
 
+**03.20** [这几个高级前端常用的API，你用到了吗？](https://segmentfault.com/a/1190000040942225)
+
+做了下列 API 的简要说明并给出了一些很有趣的例子。
+
+- MutationObserver
+- IntersectionObserver
+- getComputedStyle
+- getBoundingClientRect
+- requestAnimationFrame
+
 **03.14** [新一代Web建站技术栈的演进：SSR、SSG、ISR、DPR都在做什么？](https://zhuanlan.zhihu.com/p/365113639)
 
 **02.07** [CSS Grid 网格布局教程](https://www.ruanyifeng.com/blog/2019/03/grid-layout-tutorial.html)
