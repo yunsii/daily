@@ -6,6 +6,23 @@
 
 归档：[[2021](./2021.md)]
 
+**05.09** [为什么现在我更推荐 pnpm 而不是 npm/yarn?](https://jishuin.proginn.com/p/763bfbd3bcff)
+
+较为系统的分析的 pnpm 与 npm/yarn 的优劣，分为以下几个方面：
+
+- 速度
+- 磁盘空间
+- monorepo
+- 安全性
+
+特别的，有个评论提到如果修改依赖中的代码怎么办？这也激发了我的好奇心，最后在 [patch-package](https://github.com/ds300/patch-package) 找到了一些线索：
+
+- [Support pnpm package manager](https://github.com/ds300/patch-package/issues/35)
+- [make work with pnpm and git, use pnpm-lock.yaml](https://github.com/ds300/patch-package/pull/302)
+- [@milahu/patch-package](https://github.com/milahu/patch-package)
+
+突然想起来我已经把项目改成 pnpm 了，还用了 [patch-package](https://github.com/ds300/patch-package)，好像没什么问题啊，有必要明天检查一下了 \_(:з」∠)\_
+
 **03.20** [这几个高级前端常用的API，你用到了吗？](https://segmentfault.com/a/1190000040942225)
 
 做了下列 API 的简要说明并给出了一些很有趣的例子。
