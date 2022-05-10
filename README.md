@@ -6,6 +6,14 @@
 
 归档：[[2021](./2021.md)]
 
+**05.10** [Typography](https://web.dev/learn/design/typography/)
+
+系统讲解了文本排版的响应式。
+
+**05.10** [A COMPREHENSIVE GUIDE TO FONT LOADING STRATEGIES](https://www.zachleat.com/web/comprehensive-webfonts/)
+
+字体加载策略的综合指南，[FOUT, FOIT, FOFT](https://css-tricks.com/fout-foit-foft/) 说明了相关缩写的具体含义。
+
 **05.09** [为什么现在我更推荐 pnpm 而不是 npm/yarn?](https://jishuin.proginn.com/p/763bfbd3bcff)
 
 较为系统的分析的 pnpm 与 npm/yarn 的优劣，分为以下几个方面：
