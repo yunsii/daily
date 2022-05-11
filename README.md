@@ -6,6 +6,14 @@
 
 归档：[[2021](./2021.md)]
 
+**05.11** [Web 字体 font-family 浅谈](https://segmentfault.com/a/1190000038284125)
+
+分析了 font-family 的使用技巧，特别的还点评了各大网站的 font-family 配置。
+
+**05.11** [Deep dive CSS: font metrics, line-height and vertical-align](https://iamvdo.me/en/blog/css-font-metrics-line-height-and-vertical-align)
+
+深度解析了浏览器字体排版相关原理，仔细研读后获益匪浅，另外关于字体排版还有不少概念需要了解，比如 [10 Typography Terms Every Designer Should Know](https://creativemarket.com/blog/10-typography-terms-every-designer-should-know) 涉及的相关概念。
+
 **05.10** [Typography](https://web.dev/learn/design/typography/)
 
 系统讲解了文本排版的响应式。
@@ -30,6 +38,10 @@
 - [@milahu/patch-package](https://github.com/milahu/patch-package)
 
 突然想起来我已经把项目改成 pnpm 了，还用了 [patch-package](https://github.com/ds300/patch-package)，好像没什么问题啊，有必要明天检查一下了 \_(:з」∠)\_
+
+---
+
+补充分析，今天实测下来，初步估计是因为在使用 yarn 的时候已经生成了 patches 补丁，在直接更换为 pnpm 的时候还是能用的，如果想重新打补丁就会报错了。因此如果使用 pnpm 的话，目前要么使用 `@milahu/patch-package` 包，要么自己重新发包，实在不行只能放弃使用 pnpm 管理了。
 
 **03.20** [这几个高级前端常用的API，你用到了吗？](https://segmentfault.com/a/1190000040942225)
 
