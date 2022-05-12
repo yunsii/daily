@@ -6,6 +6,12 @@
 
 归档：[[2021](./2021.md)]
 
+**05.12** [Element size and scrolling](https://javascript.info/size-and-scroll)
+
+系统介绍了浏览器相关的坐标系统，特别的是提到了 [**Don’t take width/height from CSS**](https://javascript.info/size-and-scroll#don-t-take-width-height-from-css)，这下好了，又有活儿可以干了。
+
+另外，评论中提到的一个 [swimyoung/web-coordinates](https://github.com/swimyoung/web-coordinates) 的项目，可以[在线预览](https://swimyoung.github.io/web-coordinates/)各种坐标值和大小，相当实用了，目前看来感觉还需要一个缩放获取相关数值的功能。
+
 **05.11** [Web 字体 font-family 浅谈](https://segmentfault.com/a/1190000038284125)
 
 分析了 font-family 的使用技巧，特别的还点评了各大网站的 font-family 配置。
@@ -42,6 +48,23 @@
 ---
 
 补充分析，今天实测下来，初步估计是因为在使用 yarn 的时候已经生成了 patches 补丁，在直接更换为 pnpm 的时候还是能用的，如果想重新打补丁就会报错了。因此如果使用 pnpm 的话，目前要么使用 `@milahu/patch-package` 包，要么自己重新发包，实在不行只能放弃使用 pnpm 管理了。
+
+---
+
+再补充一下，今天偶然发现一个 TS 类型问题，推测是 yarn (v1) 导致的。`@types/react-router` 有 `@types/react@*` 的依赖，目前最新的 `@types/react` 已经到了 18 了，此时如果项目内安装 `@types/react@^17` 的依赖，yarn 会为 `@types/react-router` 独立安装 v18 的依赖，部分代码会将 React 的相关类型指向 v18 的依赖，这就导致了 TS 报错类型不兼容，人傻了 \_(:з」∠)\_ 目前判断是 yarn 装依赖导致的。删除依赖和 lock 文件，使用 pnpm 装了一下，一切正常，看了一下 lock 文件，根本没有 `@types/react@^18` 的安装项。再看 yarn.lock 中：
+
+```
+"@types/react@*":
+  version "18.0.9"
+  resolved "https://registry.npmmirror.com/@types/react/-/react-18.0.9.tgz#d6712a38bd6cd83469603e7359511126f122e878"
+  integrity sha512-9bjbg1hJHUm4De19L1cHiW0Jvx3geel6Qczhjd0qY5VKVE2X5+x77YxAepuCwVh4vrgZJdgEJw48zrhRIeF4Nw==
+  dependencies:
+    "@types/prop-types" "*"
+    "@types/scheduler" "*"
+    csstype "^3.0.2"
+```
+
+我想不必多言了。
 
 **03.20** [这几个高级前端常用的API，你用到了吗？](https://segmentfault.com/a/1190000040942225)
 
