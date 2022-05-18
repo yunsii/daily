@@ -6,6 +6,8 @@
 
 归档：[[2021](./2021.md)]
 
+**05.18** [Understanding How Node.js Release Lines Work](https://nodesource.com/blog/understanding-how-node-js-release-lines-work/)
+
 **05.15** [React官方出手，补齐原生Hook短板。Vue官方给出提醒：为什么在Vue中不需要useEvent？](https://mp.weixin.qq.com/s/gZ7eq8aq423FPH8C4eIxLA)
 
 介绍了 React 一个新的 Hook —— `useEvent`，主要使用场景：**封装事件处理函数**。`useEvent` 当前还处于 [`RFC (Request For Comments)`](https://github.com/reactjs/rfcs/blob/useevent/text/0000-useevent.md) 阶段。
