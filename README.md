@@ -6,6 +6,8 @@
 
 归档：[[2021](./2021.md)]
 
+**08.01** [不需要 JS！仅用 CSS 也能达到监听页面滚动的效果！](https://mp.weixin.qq.com/s/aDJp-Vk2wsYRRFu7O8hkFg)
+
 **05.18** [Understanding How Node.js Release Lines Work](https://nodesource.com/blog/understanding-how-node-js-release-lines-work/)
 
 **05.15** [React官方出手，补齐原生Hook短板。Vue官方给出提醒：为什么在Vue中不需要useEvent？](https://mp.weixin.qq.com/s/gZ7eq8aq423FPH8C4eIxLA)
