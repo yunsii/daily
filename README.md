@@ -6,6 +6,18 @@
 
 归档：[[2021](./2021.md)]
 
+**09.18** [How to Execute Rendered Script Tags with dangerouslySetInnerHTML in React?](https://codingshower.com/how-to-execute-rendered-script-tags-with-dangerouslysetinnerhtml-in-react)
+
+The reason why script tags are not executed via dangerouslySetInnerHTML is because React internally uses innerHTML to inject or add the raw HTML string into the DOM. Browsers [do not execute](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML#security_considerations) the script tags in the HTML string when set via innerHTML.
+
+**09.18** [Get href in JavaScript](https://www.delftstack.com/howto/javascript/javascript-get-href)
+
+- The `Element` interface’s `getAttribute()` method returns the value of a specified attribute for the element. If the specified attribute does not exist, the return value is `null` or `""` (the empty string).
+
+- The `HTMLAnchorElement.href` property is a stringifier that returns a `USVString` containing the full URL and allows the href to be updated.
+
+- The sole difference between the `getAttribute()` and `href` attribute is that prior returns the value of the `anchor` element. In contrast, the latter returns the full path where the `anchor` element points.
+
 **08.16** [Moving the mouse: mouseover/out, mouseenter/leave](https://javascript.info/mousemove-mouseover-mouseout-mouseenter-mouseleave)
 
 These things are good to note:
