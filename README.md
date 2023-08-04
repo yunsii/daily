@@ -6,6 +6,8 @@
 
 归档：[[2021](./2021.md)] [[2022](./2022.md)]
 
+**08.04** [Idle Until Urgent](https://philipwalton.com/articles/idle-until-urgent/)
+
 **06.06** [CRDT 简介](https://juejin.cn/post/7049939780477386759)
 
 > CRDT (conflict-free replicated data type) 无冲突复制数据类型，是一种可以在网络中的多台计算机上复制的数据结构，副本可以独立和并行地更新，不需要在副本之间进行协调，并保证不会有冲突发生。
