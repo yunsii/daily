@@ -6,6 +6,13 @@
 
 归档：[[2021](./2021.md)] [[2022](./2022.md)]
 
+**09.09** HMR 初探
+
+- [Webpack HMR 原理解析](https://zhuanlan.zhihu.com/p/30669007)
+- [How should we set up apps for HMR now that Fast Refresh replaces react-hot-loader?](https://github.com/facebook/react/issues/16604#issuecomment-528663101)
+
+结合这两个链接算是稍稍理解的 HMR 了，vite 插件实现看[这里](https://github.dev/vitejs/vite-plugin-react/blob/286360281992c425bf75cb0a18846f65fcdc5ef3/packages/plugin-react/src/index.ts)。HTML 和 CSS 的 HMR 实现相对于 JS 来说是最简单的，直接替换就好了，JS 特别是想 React 这样存在状态管理的框架的 HMR 看起来都需要官方支持才是最好的。
+
 **08.04** [Idle Until Urgent](https://philipwalton.com/articles/idle-until-urgent/)
 
 **06.06** [CRDT 简介](https://juejin.cn/post/7049939780477386759)
